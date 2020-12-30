@@ -1,0 +1,75 @@
+server:
+  port: 9999
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:mmoty/cloud.git
+          force-pull: true
+          clone-on-start: true
+          basedir: target/config
+          ignore-local-ssh-settings: true
+          strict-host-key-checking: false
+          host-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQCu+2EtNrj2VdvzSzABcEiVbYKWePw/aC50YOmlOY0+64FkORMiwo+kU2dQCmZRMS/AvwN8orC/Qy2zF9zSawTvDVh/Coc1yl2FLTub48GD1k9kAFrS9k8hlIgXOe3kVuaTenWjfhphDcZhSpyTHPyEzRVjk5yUDvwdCwoCvB7k8AGGv3R8ujCQCB4ImTgTXNHxYG5SxDjrJtJ0rvR1xdMYxQZ2vUymqYx1syf0t8XVAqkqtEZWjEqIlVR8sL4e5BkFvCwerJvIUZy3wmrnzvVXdu2TRbKGezHc7XGa7mHKdPNxj8yWSg9ihv3G2uvFOIxW+KHfUDvqWxlFtFUnK4IjsAwNqGCMCjkHS3UIeaNTtF+ZN9hdrbAmRjWIoGLC8sPgze8BqN5YVb+Kel+xRJloFtIkLOjJyi04doa68ukyVbokPzkEYaJfeWM/e4EK3QtWe4aDLt0A0jKQUb8W0t5fUFzIh7VVqVIjOMnMAqJy0nHtIBFuyNLe1deHS7BADUnHK1EYsXIwIUEQFEi62JCf3EQ9e7wCAPsE4VWOGxMG2QKHw8bk/0kF4qu0ETmD3flzoH0eAYaQ8UORjJY2120Z2iaNwdIr0qk3ydvw1J+vEITdaKuiOoijcbaE35Cz7UFS1YJ5o6OZEY+KaxXlGWo77gnoOAdfO6Y5PDS92/Os+Q== mmoty10@gmail.com
+          host-key-algorithm: ssh-rsa
+          private-key: |
+                        -----BEGIN RSA PRIVATE KEY-----
+                        MIIJKQIBAAKCAgEArvthLTa49lXb80swAXBIlW2Clnj8P2gudGDppTmNPuuBZDkT
+                        IsKPpFNnUApmUTEvwL8DfKKwv0Mtsxfc0msE7w1YfwqHNcpdhS07m+PBg9ZPZABa
+                        0vZPIZSIFznt5Fbmk3p1o34aYQ3GYUqckxz8hM0VY5OclA78HQsKArwe5PABhr90
+                        fLowkAgeCJk4E1zR8WBuUsQ46ybSdK70dcXTGMUGdr1MpqmMdbMn9LfF1QKpKrRG
+                        VoxKiJVUfLC+HuQZBbwsHqybyFGct8Jq5871V3btk0Wyhnsx3O1xmu5hynTzcY/M
+                        lkoPYob9xtrrxTiMVvih31A76lsZRbRVJyuCI7AMDahgjAo5B0t1CHmjU7RfmTfY
+                        Xa2wJkY1iKBiwvLD4M3vAajeWFW/inpfsUSZaBbSJCzoycotOHaGuvLpMlW6JD85
+                        BGGiX3ljP3uBCt0LVnuGgy7dANIykFG/FtLeX1BcyIe1ValSIzjJzAKictJx7SAR
+                        bsjS3tXXh0uwQA1JxytRGLFyMCFBEBRIutiQn9xEPXu8AgD7BOFVjhsTBtkCh8PG
+                        5P9JBeKrtBE5g935c6B9HgGGkPFDkYyWNtdtGdomjcHSK9KpN8nb8NSfrxCE3Wir
+                        ojqIo3G2hN+Qs+1BUtWCeaOjmRGPimsV5RlqO+4J6DgHXzumOTw0vdvzrPkCAwEA
+                        AQKCAgAofMnTaGILvXoTJUaKTqy8xoX8wym6kiSNkQ7+x/5CnMNnqT0gQdxyrUmu
+                        X3mlN7hQ5OGtqQc0ehrM4ayak2Ck33Wmj40RiS1ybzDntR9FngToopxhS9SrdG64
+                        0RKWTvUzEpa9qaP46PMJ9/WapI5ZPArC65jDOWRkY/WBBH4xgscXop0Vbw9lhDtO
+                        ygULleKN8z4TsItq/aSckw7FYWyiwpPoTYy602hIo5ePLCZ+TwtNckEELZnhWIwf
+                        /dU/2I9hoFSlFFNHWnrkmfuaf2yNPFtkRDA2pbK358jtjFLcQYtCr38rFx/QMGPv
+                        6x+6locCaK0ruqjiZQnH8x3w3kRSE6AJTegcKLzcWlPkGourevFTACZNjs5wuHeF
+                        nMzw7t/v+oYSqIOf/jgcIZ2NdRtE2jUdKxm0KUQObTXBQ4cwDbBZnSx/0iAFx6B5
+                        NOdzhzkTTzx42VHmUZJZ2herMfGrKFneQTdQcuvfEwSX9bjHoMRbF4AHOQZxrL5Z
+                        QtcC/TllD2SIIXj83y3XwoicCZ8SIxG9PK84cC2x4Pp6RpSF9NvR6QezlRH2X22y
+                        90bx/BUA1m5tHijf25GeuRU+dtceM39wpC3xqArR/cFRPlTrt8zAZkCVx6B3MrF5
+                        xuCZkV61cxXnp6AGql/IMB9FcM4ZvGvhG+EX3D8mK1OkxxdZMQKCAQEA2lSZ8V84
+                        rePyT32O3UAUsoCvEMNut+CJ/ieM/973Bi9YS17fxvybRWsvZdqsMXgPE4EpbBg3
+                        Gr5nwvnem32gfhIhCjTKpkUTASnODkY0iSi3Os+qbSPDu2AdfhzVUz2YFC7kkIfl
+                        7Q3IlN8BUSngWzmwecL4rn6vRFo1RyF3/JflHK7Sw714dA40oNni+oOgPAAP3Fn7
+                        LqbO+tYUeAMFtMbt1pKWbuLtn2xVa3cqpvxkbN6rH3OpCF8+y2KotP3igpC2UZN4
+                        vYgEs82bcBz1DZkAu6vyJMfsSGgf4WIkwL6TJjTWiw9dz3bh3jRWvfmlDHjUOlZ7
+                        TCCEMHT4Cv1mxwKCAQEAzSwgFPsUATgpUvBpOlcf1SdFsjxXVx6PIcMPEdoRjIpJ
+                        zVmMqyUw2AJWMGFhaJvg7DA9IUOnXcmUG2fhhP6EuiO8equLQwgUXAbq9FfMsYlx
+                        ICtU6T+xlaEHC0Bisf1XTnZN7thSl8vZi3o9P/F+HRHQzy0ObdVSbTn19OL1X20r
+                        CsIE//y7DNcr8DgaEzXsv98mjwiIWePPAnLcJJoojgUPJDZ1HBbCI/sO4UlzkTk2
+                        LM+d9NAnYP/4oFDNeYTxVq4DrQtY1MRhmn2jH6mn5tJVOw/Tme93BguIkwqxtxMC
+                        X1xP4BAsxD/qqYWw7i/JatMYUR5s/t4yM6C1OcOOPwKCAQA+ADZzUBo1b30ZS8ut
+                        UwxNoLOWbBleCFrHnQ2yf+vgisNlK/0achPaA9VC9HVf2vtVC6Hqu3myk4291d18
+                        hJF2G8ncLx+5VfZOp0OH1DIJHVHjVqPMOJLV/DaD4MZHzD8KxEJONPl7dyWV+TpT
+                        hTPcVCakfVTHoNw+6eslVwDO74e1vIPH6F9zfbE+WIHXqFdxkobuiXMGTYKLww2v
+                        AxS0wKU8AQbNWI4obshXK1EmeJhAPn+T//Fpmjqn4U2NkGepslTEF7/6+sxzDxls
+                        Hh0NDn0hznOGNGwKJ9+dzpQnVDdPa0Pd27BFQTplMrHLY0CWqR2Dr5l2BenkJONn
+                        o4xzAoIBAQDDSsX60obXJksHXDj9RCLTtH79ybvk+/yHyXBVsLlVief3484mtc7J
+                        PWgmwvqCJSWyC7SULh5oAlDMyVN7UPyrZQqpxRFYq58dfaQ1EkGPl+CrGzPGlU8G
+                        uvDGf/GxtBBfafKCbzwmqu2WerNEYyyEpQmZuixq1UuRFkOMZl/jBjmbEtTJiRnO
+                        fh2fmPcQ5BpHBDRin1+SGGpZzVTILkh97kjcUk2kf/EpaHZgcJblW4y6mKCkf2GM
+                        TfmtN1xt1+IUfKyZERzr4UV6VS5pHAbqibiA8G6crrgfc+j69Yn1Vc3DUU3iW+MQ
+                        pjpKRCwGfEv/N5GE3S4oZv1n8QevRPnnAoIBAQC5bRpKOtvbQDgifdjVyyAGnxrJ
+                        RpjWCwDuv8REWTgg7NwQ20N0vK5JZ8etK/AWhJRSh2KtJiPjph+adZ72+XKP8Q7i
+                        wHEmgowWa+3Ny+PqCfwRyJalJhwlTo8v8f2CeyqcI0iE5x17Yaeiqxlx47spumgu
+                        KlXVj6sjHET7wCrzxLE8FgtivvaIDLKchwfkdsjSNelmN+ZFQrwuLfUk2alSS209
+                        h5kOYaIWO7xXEOAv0TfZwFZetgC7Lnyo0vgQK7olnx1kBsaI2Tv6n4zY6Ik8EUy6
+                        r/8Q7M9pWCJzCXnPnP8TqHiU2GQ79J/NDhvbfyFBfScwn+O5k0N+A0md6fbb
+                        -----END RSA PRIVATE KEY-----
+  application:
+      name: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../../../../registery"
+		},
+		{
+			"name": "config-server",
+			"path": "../../../../config-server"
+		},
+		{
+			"name": "config-client",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
