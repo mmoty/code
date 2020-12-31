@@ -2,17 +2,21 @@ spring:
   application:
     name: config-client
   config:
-    import: configserver:http://localhost:9999
-  profiles:
+    import: configserver:http://config-server:9999
     active: development
   cloud:
     config:
       label: master
       profile: development
+      discovery: 
+        enabled: true
+        serviceId: config-server
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: http://${eureka_host}:8761/eureka
     fetch-registry: true
   instance:
     prefer-ip-address: true
+    metadataMap:
+      configPath: /config

@@ -1,13 +1,13 @@
 version: '3.4'
 
 services:
-  registery:
-    image: registery
+  code:
+    image: code
     build:
       context: .
       dockerfile: ./Dockerfile
     environment:
       JAVA_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005,quiet=y
     ports:
-      - 8761:8761
+      - 8716:8716
       - 5005:5005
